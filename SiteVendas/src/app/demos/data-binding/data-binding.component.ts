@@ -1,32 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
-  templateUrl: './data-binding.component.html'
+  templateUrl: './data-binding.component.html',
+  styles: []
 })
-export class DataBindingComponent   {
+export class DataBindingComponent {
 
-
-  public contadorClique: number =0;
-
-  public nome:string = "";
-
-  public UrlImagem: string ="https://angular.io//assets//images//logos//angular//angular.svg";
-
+  public contadorClique: number = 0;  
+  public urlImagem: string = "https://angular.io/assets/images/logos/angular/angular.svg";
+  public nome: string = "";
 
   adicionarClique(){
     this.contadorClique++;
   }
+
   zerarContador(){
-    this.contadorClique= 0;
+    this.contadorClique = 0;
   }
-  KeyUp(event: any){
+
+  /* KeyUp(event: any){
     this.nome = event.target.value;
-  }
-  
-
-
-
-
+  } */
 
 }
